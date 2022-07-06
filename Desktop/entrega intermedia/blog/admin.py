@@ -3,6 +3,6 @@ from .models import *
 
 # Register your models here.
 
-admin.site.register(cliente)
-admin.site.register(vendedor)
-admin.site.register(libro)
+
+admin.site.register(Vendedor)
+admin.site.register(Libro)

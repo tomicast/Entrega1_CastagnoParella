@@ -1,9 +1,12 @@
 from django.urls import path
-from .views import clientes, vendedores, libros, inicio
+
+from blog.views import inicio, vendedores, libros, crear_libro, listado_libros
 
 urlpatterns = [
-    path('', inicio),
-    path('clientes/', clientes),
-    path('vendedores/', vendedores),
-    path('libros/', libros),
+    path('', inicio, name='inicio'),
+    path('vendedores/', vendedores, name='vendedores'),
+    path('libros/', libros, name='libros'),
+    path('crear-libro', crear_libro, name= 'crear_libro'),
+    path('listado-libros', listado_libros, name= 'listado_libros')
+   
 ]

@@ -56,7 +56,7 @@ ROOT_URLCONF = 'Entrega1_CastagnoParrella.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\Tomas\Desktop\entrega intermedia\blog\templates\blog'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

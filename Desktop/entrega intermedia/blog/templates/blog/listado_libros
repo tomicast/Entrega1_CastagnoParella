@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>listado de libros</title>
+{% endblock title %}
+
+{% block texto_header %}
+<h1>
+    listado de libros
+</h1>
+{% endblock texto_header %}
+
+{% block despues_del_header %}
+<p>
+    <a href={% url 'crear_libro'%}>Crear libro</a>
+</p>
+
+<p>
+    <form action={% url 'listado_libros'%}>
+        <button>Buscar</button>
+</p>
+
+<p>
+    <ul>
+        {% for libro in listado_libros%}
+        <li>
+          {{libro}}
+        </li>
+        {%endfor%%}
+    </ul>
+</p>
+{% endblock despues_del_header %}
